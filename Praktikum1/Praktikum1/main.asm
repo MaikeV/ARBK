@@ -8,6 +8,7 @@
 
 .def tmp = r16
 .def leds = r17
+.def tmp2 = r18
 
 .org 0x00
 	rjmp start 
@@ -21,13 +22,16 @@ start:
 	ldi tmp, (1<<PB2) | (1<<PB1) |(1<<PB0)	;Setzen der Ausgaenge als Output(1)
 	out DDRB, tmp
 	ldi leds,1	;Setzen des Startwertes
+	ldi tmp, 5
+	ldi tmp2, 0
+
 
 main:
-	ldi PORTB, leds
+	out PORTB, leds
 	lsl leds	;linkshift auf leds 001 - 010 - 100 - 000
-	brge leds, 5
-	rjmp backwards
-	rcall wait
+	cp leds, tmp
+	brge backwards
+	;rcall wait
 	rjmp main
 
 backwards:
@@ -35,23 +39,23 @@ backwards:
 	lsr leds
 
 back:
-	ldi PORTB, leds
+	out PORTB, leds
 	lsr leds	;rechtsshift auf leds 010 - 001 - 000
-	brle leds, 0
-	rjmp main
+	cp leds, tmp2
+	brlt main
 	rcall wait
 	rjmp back
 
 wait:
-	ldi  r18, 48
-    ldi  r19, 0
+	ldi  r19, 48
     ldi  r20, 0
+    ldi  r21, 0
 
-L1: dec  r20
+L1: dec  r21
+    brne L1
+    dec  r20
     brne L1
     dec  r19
-    brne L1
-    dec  r18
     brne L1
     lpm
     nop

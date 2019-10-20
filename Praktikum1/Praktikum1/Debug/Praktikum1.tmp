@@ -1,0 +1,32 @@
+<ASSEMBLER_INFO>
+ <VERSION>2.2.7</VERSION>
+ <DEVICE>"ATmega8"</DEVICE>
+ <WORKING_DIR>E:\Development\AtmelStudio\Studium\ARBK\ARBK\Praktikum1\Praktikum1\Debug</WORKING_DIR>
+ <INCLUDE_PATH>
+  <DIR>E:/dev\AtmelStudio\7.0\Packs\atmel\ATmega_DFP\1.3.300\avrasm\inc</DIR>
+  <DIR>E:\dev\AtmelStudio\7.0\toolchain\avr8\avrassembler\Include</DIR>
+  <DIR></DIR>
+ </INCLUDE_PATH>
+ <SOURCE_FILE>E:\Development\AtmelStudio\Studium\ARBK\ARBK\Praktikum1\Praktikum1\main.asm</SOURCE_FILE>
+ <INCLUDED_FILES>
+  <FILE>E:/dev\AtmelStudio\7.0\Packs\atmel\ATmega_DFP\1.3.300\avrasm\inc\m8def.inc</FILE>
+ </INCLUDED_FILES>
+ <OBJECT_FILES>
+  <FILE>E:\Development\AtmelStudio\Studium\ARBK\ARBK\Praktikum1\Praktikum1\Debug\Praktikum1.obj</FILE>
+ </OBJECT_FILES>
+ <HEX_FILES>
+  <FILE>Praktikum1.hex</FILE>
+ </HEX_FILES>
+ <OUTPUT_FILES>
+  <FILE>Praktikum1.map</FILE>
+  <FILE>Praktikum1.lss</FILE>
+ </OUTPUT_FILES>
+ <LABELS>
+  <start><FILE>E:\Development\AtmelStudio\Studium\ARBK\ARBK\Praktikum1\Praktikum1\main.asm</FILE><LINE>16</LINE></start>
+  <main><FILE>E:\Development\AtmelStudio\Studium\ARBK\ARBK\Praktikum1\Praktikum1\main.asm</FILE><LINE>29</LINE></main>
+  <backwards><FILE>E:\Development\AtmelStudio\Studium\ARBK\ARBK\Praktikum1\Praktikum1\main.asm</FILE><LINE>37</LINE></backwards>
+  <wait><FILE>E:\Development\AtmelStudio\Studium\ARBK\ARBK\Praktikum1\Praktikum1\main.asm</FILE><LINE>49</LINE></wait>
+  <back><FILE>E:\Development\AtmelStudio\Studium\ARBK\ARBK\Praktikum1\Praktikum1\main.asm</FILE><LINE>41</LINE></back>
+  <L1><FILE>E:\Development\AtmelStudio\Studium\ARBK\ARBK\Praktikum1\Praktikum1\main.asm</FILE><LINE>54</LINE></L1>
+ </LABELS>
+</ASSEMBLER_INFO>
